@@ -42,7 +42,7 @@ df_filtrado = df[
 ]
 
 # --- Conteúdo Principal ---
-st.title("🎲 Dashboard de Análise de Salários na Área de Dados")
+st.title(" 🧑‍💻 Dashboard de Análise de Salários na Área de Dados")
 st.markdown("Explore os dados salariais na área de dados nos últimos anos. Utilize os filtros à esquerda para refinar sua análise.")
 
 # --- Métricas Principais (KPIs) ---
@@ -125,7 +125,7 @@ with col_graf4:
         grafico_paises = px.choropleth(media_ds_pais,
             locations='residencia_iso3',
             color='usd',
-            color_continuous_scale='rdylgn',
+            color_continuous_scale='viridis',
             title='Salário médio de Cientista de Dados por país',
             labels={'usd': 'Salário médio (USD)', 'residencia_iso3': 'País'})
         grafico_paises.update_layout(title_x=0.1)
